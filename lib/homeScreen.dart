@@ -30,13 +30,22 @@ class _HomeScreenState extends State<HomeScreen> {
                         width: 100,
                         height: 100,
                         color: Colors.green,
-                        child: Center(child: Text("Container 1")),
+                        child: Center(
+                            child: Text(
+                          "Container 1",
+                          style: TextStyle(
+                              color: Colors.white, fontWeight: FontWeight.bold),
+                        )),
                         key: Key('1'))
                     : Container(
                         width: 300,
                         height: 100,
                         color: Colors.red,
-                        child: Center(child: Text("Container 2")),
+                        child: Center(
+                            child: Text("Container 2",
+                                style: TextStyle(
+                                    color: Colors.white,
+                                    fontWeight: FontWeight.bold))),
                         key: Key('2'))),
           ),
           SizedBox(
