@@ -8,7 +8,7 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen> {
-  bool flag = true;
+  bool isflip = true;
 
   @override
   Widget build(BuildContext context) {
@@ -25,7 +25,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 transitionBuilder: (Widget child, Animation<double> animation) {
                   return ScaleTransition(scale: animation, child: child);
                 },
-                child: flag
+                child: isflip
                     ? Container(
                         width: 100,
                         height: 100,
@@ -45,7 +45,7 @@ class _HomeScreenState extends State<HomeScreen> {
           ElevatedButton(
               onPressed: () {
                 setState(() {
-                  flag = !flag;
+                  isflip = !isflip;
                 });
               },
               child: Text('next'))
